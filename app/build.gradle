@@ -5,7 +5,9 @@ plugins {
 android {
     namespace 'com.example.lab_quizz'
     compileSdk 35
-
+    viewBinding {
+        enabled = true
+    }
     defaultConfig {
         applicationId "com.example.lab_quizz"
         minSdk 31
@@ -29,7 +31,9 @@ android {
 }
 
 dependencies {
-
+    implementation 'androidx.navigation:navigation-fragment:2.7.5'
+    implementation 'androidx.navigation:navigation-ui:2.7.5'
+    implementation 'androidx.fragment:fragment:1.6.2'
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
